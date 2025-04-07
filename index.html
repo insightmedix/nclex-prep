@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCLEX Prep Schedule - Easy RN</title>
+  <link rel="stylesheet" href="nclex.css">
+</head>
+<body>
+  <header>NCLEX Prep Weekly Schedule</header>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="dark-mode">
+      <span class="slider round"></span>
+      <span class="toggle-label">Enable Dark Mode</span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" id="auto-expand">
+      <span class="slider round"></span>
+      <span class="toggle-label">Auto-expand today's schedule</span>
+    </label>
+  </div>
+
+  <div class="nav-tabs">
+    <div class="nav-tab active" data-tab="schedule">Schedule</div>
+    <div class="nav-tab" data-tab="progress">Progress</div>
+    <div class="nav-tab" data-tab="settings">Settings</div>
+  </div>
+
+  <div id="schedule" class="tab-content active">
+    <div class="progress-container">
+      <h3 class="progress-title">Today's Progress</h3>
+      <div class="progress-bar">
+        <div id="today-progress" class="progress-fill"></div>
+      </div>
+      <div class="progress-stats">
+        <span id="tasks-completed">0/0 Tasks</span>
+        <span id="time-today">0 hours</span>
+      </div>
+    </div>
+
+    <!-- Sunday -->
+    <div class="day" data-day="sunday">
+      <h2>Sunday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 10:00PM:</span> MAIN COHORT CLASS
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+            <span class="instructor">(Only for ATT holders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monday -->
+    <div class="day today" data-day="monday">
+      <h2>Monday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00AM - 8:00AM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">1:00PM - 4:00PM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00PM - 7:00PM:</span> Presentations
+          </div>
+        </div>
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 11:00PM:</span> Main Cohort Class
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+            <span class="instructor">(ATT holders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tuesday -->
+    <div class="day" data-day="tuesday">
+      <h2>Tuesday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00AM - 8:00AM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">1:00PM - 4:00PM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wednesday -->
+    <div class="day" data-day="wednesday">
+      <h2>Wednesday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00AM - 8:00AM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">1:00PM - 4:00PM:</span> Hot Questions
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00PM - 7:00PM:</span> Presentations
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 11:00PM:</span> Main Cohort Class
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thursday -->
+    <div class="day" data-day="thursday">
+      <h2>Thursday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+            <span class="instructor">(RN Akosua)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00AM - 8:00AM:</span> Hot Question Solving
+            <span class="instructor">(RN Beatrice &amp; RN Abigail)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">1:00PM - 4:00PM:</span> Hot Question Solving
+            <span class="instructor">(RN Cutie)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00PM - 7:00PM:</span> Case Study Reviews
+            <span class="instructor">(RN Paul)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+            <span class="instructor">(Only for ATT holders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Friday -->
+    <div class="day" data-day="friday">
+      <h2>Friday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+            <span class="instructor">(RN Akosua)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00PM - 7:00PM:</span> Pharmacology Crush Course
+            <span class="instructor">(RN Wahab)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+            <span class="instructor">(Only for ATT holders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saturday -->
+    <div class="day" data-day="saturday">
+      <h2>Saturday</h2>
+      <div class="tasks">
+        <div class="task">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">3:00AM - 5:00AM:</span> Content Mastery
+            <span class="instructor">(RN Akosua)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">5:00PM - 7:00PM:</span> Pharmacology Crush Course
+            <span class="instructor">(RN Wahab)</span>
+          </div>
+        </div>
+        <div class="task optional">
+          <input type="checkbox" class="checkbox">
+          <div class="task-text">
+            <span class="time">8:00PM - 12:00AM:</span> Readiness Page
+            <span class="instructor">(Only for ATT holders)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress" class="tab-content">
+    <div class="progress-container">
+      <h3 class="progress-title">Weekly Progress</h3>
+      <div class="progress-bar">
+        <div id="weekly-progress" class="progress-fill"></div>
+      </div>
+      <div class="progress-stats">
+        <span id="weekly-tasks-completed">0/0 Tasks</span>
+        <span id="weekly-time">0 hours</span>
+      </div>
+    </div>
+    <div class="progress-container">
+      <h3 class="progress-title">Study Statistics</h3>
+      <div id="stats">
+        <p>Required tasks completed: <span id="required-completed">0/0</span></p>
+        <p>Optional tasks completed: <span id="optional-completed">0/0</span></p>
+        <p>Total study hours: <span id="total-hours">0</span></p>
+        <p>Completion streak: <span id="streak">0 days</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="settings" class="tab-content">
+    <div class="progress-container">
+      <h3 class="progress-title">Notification Settings</h3>
+      <div class="task">
+        <input type="checkbox" id="notifications-enabled" class="checkbox">
+        <div class="task-text">Enable notifications</div>
+      </div>
+      <div class="task">
+        <input type="checkbox" id="reminder-enabled" class="checkbox">
+        <div class="task-text">Send reminders 30 minutes before task</div>
+      </div>
+    </div>
+    <div class="progress-container">
+      <h3 class="progress-title">Account</h3>
+      <p>Program: NCLEX Prep - Easy RN</p>
+      <p>Status: Active</p>
+    </div>
+    <!-- <div class="progress-container">
+      <h3 class="progress-title">App Settings</h3>
+      <div class="task">
+        <input type="checkbox" id="dark-mode" class="checkbox">
+        <div class="task-text">Dark mode</div>
+      </div>
+      <div class="task">
+        <input type="checkbox" id="auto-expand" class="checkbox">
+        <div class="task-text">Auto-expand today's schedule</div>
+      </div> -->
+    </div>
+  </div>
+
+  <footer>
+    All Classes on Zoom<br>
+    <a href="https://www.easyrn.com" target="_blank">Easy RN</a> | <a href="https://www.easyrn.com/contact" target="_blank">Contact Us</a><br>
+  </footer>
+
+  <script src="nclex.js"></script>
+</body>
+</html>
